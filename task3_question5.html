@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task3-5
+        </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        <p id="arr"></p>
+        <p id="arr1"></p>
+        <p id="arr2"></p>
+        <p id="arr3"></p>
+
+        <p id="demo4"></p>
+        <p id="arr4"></p>
+
+        <p id="alpha"></p>
+        <script>
+         let str = 'In space, no one can hear you code.';
+         document.getElementById("demo").innerHTML = str.split();
+         document.getElementById("demo1").innerHTML = str.split('');
+         document.getElementById("demo2").innerHTML = str.split(' ');
+         document.getElementById("demo3").innerHTML = str.split('e');
+            
+        const arr = ['B','n', 'n', 5];
+        document.getElementById("arr").innerHTML = arr.join();
+        document.getElementById("arr1").innerHTML = arr.join('');
+        document.getElementById("arr2").innerHTML = arr.join(' ');
+        document.getElementById("arr3").innerHTML = arr.join('a');
+
+        document.getElementById("demo4").innerHTML = str;
+        document.getElementById("arr4").innerHTML = arr;
+     
+        const  alpha = ['water','space suits','food','plasma sword','batteries'];
+        alpha.sort();
+        document.getElementById("alpha").innerHTML = alpha.join(' ');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task3_3
+        </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+             const cargoHold =["oxygen tanks","space suits", "parrot", "instruction manual", "meal packs", "slinky", "security blanket"];
+            document.getElementById("demo").innerHTML = cargoHold;
+            cargoHold.splice(3,0,("keys"));
+            document.getElementById("demo1").innerHTML = cargoHold;
+            cargoHold.splice(cargoHold.indexOf("instruction manual"),1);
+            document.getElementById("demo2").innerHTML = cargoHold;
+            cargoHold.splice(2,3,"cat","fob","string cheese");
+            document.getElementById("demo3").innerHTML = cargoHold;
+        </script>
+
+    </body>
+</html>

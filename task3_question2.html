@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task3_2</title>
+    </head>
+    <body>
+        <p id="new"></p>
+        <p id="new1"></p>
+        <p id="new2"></p>
+        <p id="new3"></p>
+        <p id="new4"></p>
+        <p id="new5"></p>
+        <p id="new6"></p>
+        <script>
+            const cargoHold =["oxygen tanks","space suits", "parrot", "instruction manual", "meal packs", "slinky", "security blanket"];
+            document.getElementById("new").innerHTML = cargoHold;
+            cargoHold[5]=["space tether"];
+            document.getElementById("new1").innerHTML = cargoHold;
+            document.getElementById("new2").innerHTML = cargoHold.pop();
+            document.getElementById("new3").innerHTML = cargoHold.shift();
+            cargoHold.unshift(1138);
+            document.getElementById("new4").innerHTML = cargoHold;
+            cargoHold.push("20 meters");
+            document.getElementById("new5").innerHTML = cargoHold;
+            document.getElementById("new6").innerHTML = cargoHold.length;
+        </script> 
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task3-7
+        </title>
+    </head>
+    <body>
+    <p id="arr"></p>
+    <p id="arr1"></p>
+    <p id="arr2"></p>
+    <p id="arr3"></p>
+    <p id="arr4"></p>
+    <p id="arr5"></p>
+    <p id="arr6"></p>
+    <p id="arr7"></p>
+    <p id="arr8"></p>
+        <script>
+            let people = ["Greg", "Mary", "Devon", "James"];
+            for(var i=0;i<people.length;i++)
+            {
+                console.log(people[i]);
+            }
+
+          people.shift();
+          document.getElementById("arr").innerHTML = people;
+          people.pop();
+          document.getElementById("arr1").innerHTML = people;
+          people.unshift("Matt");
+          document.getElementById("arr2").innerHTML = people;
+          people.push("Rahul")
+          document.getElementById("arr3").innerHTML = people;
+
+          for(var i=0;i<people.length;i++)
+            {
+                console.log(people[i]);
+                if(people[i]=='Mary')
+                {
+                    break;
+                }
+            }
+
+        document.getElementById("arr4").innerHTML = people.slice(2);
+        document.getElementById("arr5").innerHTML = people.indexOf("Mary");
+        document.getElementById("arr6").innerHTML = people.indexOf("Foo");
+        people.splice(2,1,"Elizabeth", "Artie");
+        document.getElementById("arr7").innerHTML = people;
+
+        let withBob ='Bob';
+       const con = people.concat(withBob)
+        document.getElementById("arr8").innerHTML = con;
+     </script>
+    </body>
+</html>
